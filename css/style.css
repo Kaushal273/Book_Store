@@ -117,3 +117,43 @@ html::-webkit-scrollbar-thumb{background: var(--black);}
 .header .header-2 .navbar a:hover{
     background: var(--dark-color);
 }
+.header .header-2.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+body{
+    height: 300rem;
+}
+
+
+
+
+/* media queries */
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+        
+    }  
+    .header .header-1{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    .header .header-2{
+        display: none;
+    }
+    .header .header-1{
+        box-shadow: var(--box-shadow);
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+        
+    }  
+    
+}
